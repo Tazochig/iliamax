@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.kvelaperi {
+  display: flex;
+  width: 1301px;
+  justify-content: space-between;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.marcxena {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

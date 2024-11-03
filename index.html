@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ilia VS Max strikes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="kvelaperi">
+        <div class="marcxena">
+          <div class="head">
+            <h2>Head</h2>
+            <p>Head Strikes Total: <span id="leftHeadTotal">0</span></p>
+            <p>Head Strikes Landed: <span id="leftHeadLanded">0</span></p>
+            <button id="missedHeadButton" onclick="incrementSingle('leftHeadTotal')">Missed</button>
+            <button id="landedheadbutton" onclick="incrementBoth('leftHeadTotal', 'leftHeadLanded')">
+              Landed
+            </button>
+          </div>
+          <div class="body">
+            <h2>Body</h2>
+            <p>Body Strikes Total: <span id="leftBodyTotal">0</span></p>
+            <p>Body Strikes Landed: <span id="leftBodyLanded">0</span></p>
+            <button id="missedbodybutton" onclick="incrementSingle('leftBodyTotal')">Missed</button>
+            <button id="landedbodybutton" onclick="incrementBoth('leftBodyTotal', 'leftBodyLanded')">
+              Landed
+            </button>
+          </div>
+          <div class="leg">
+            <h2>Legs</h2>
+            <p>Leg Strikes Total: <span id="leftLegTotal">0</span></p>
+            <p>Leg Strikes Landed: <span id="leftLegLanded">0</span></p>
+            <button id="missedlegbutton" onclick="incrementSingle('leftLegTotal')">Missed</button>
+            <button id="landedlegbutton" onclick="incrementBoth('leftLegTotal', 'leftLegLanded')">
+              Landed
+            </button>
+          </div>
+        </div>
+        <img
+          src="https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2024-10/2/TOPURIA_ILIA_L_BELT_10-26.png?itok=MvI4bGIl"
+          alt="Fighter 1"
+        />
+        <img
+          src="https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2024-04/HOLLOWAY_MAX_L_04-13.png?itok=U9IB8OUQ"
+          alt="Fighter 2"
+        />
+        <div class="right">
+          <div class="head">
+            <h2>Head</h2>
+            <p>Head Strikes Total: <span id="rightHeadTotal">0</span></p>
+            <p>Head Strikes Landed: <span id="rightHeadLanded">0</span></p>
+            <button onclick="incrementSingle('rightHeadTotal')">Missed</button>
+            <button
+              onclick="incrementBoth('rightHeadTotal', 'rightHeadLanded')"
+            >
+              Landed
+            </button>
+          </div>
+          <div class="body">
+            <h2>Body</h2>
+            <p>Body Strikes Total: <span id="rightBodyTotal">0</span></p>
+            <p>Body Strikes Landed: <span id="rightBodyLanded">0</span></p>
+            <button onclick="incrementSingle('rightBodyTotal')">Missed</button>
+            <button
+              onclick="incrementBoth('rightBodyTotal', 'rightBodyLanded')"
+            >
+              Landed
+            </button>
+          </div>
+          <div class="leg">
+            <h2>Legs</h2>
+            <p>Leg Strikes Total: <span id="rightLegTotal">0</span></p>
+            <p>Leg Strikes Landed: <span id="rightLegLanded">0</span></p>
+            <button onclick="incrementSingle('rightLegTotal')">Missed</button>
+            <button onclick="incrementBoth('rightLegTotal', 'rightLegLanded')">
+              Landed
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
